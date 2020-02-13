@@ -1,0 +1,66 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: "source/assets/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/assets/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "organizers" # Used in routes, e.g., /admin/collections/blog
+    label: "Organizer" # Used in the UI
+    folder: "source/_organizers" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    identifier_field: first_name
+    slug: "{{fields.first_name}}_{{fields.last_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Extends", name: "extends", widget: "hidden", default: "_layouts.speaker"}
+      - {label: "First name", name: "first_name", widget: "string"}
+      - {label: "Last name", name: "last_name", widget: "string"}
+      - {label: "Profession", name: "profession", widget: "string"}
+      - {label: "Website", name: "website", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Section", name: "section", widget: "hidden", default: "info"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "speakers" # Used in routes, e.g., /admin/collections/blog
+    label: "Speaker" # Used in the UI
+    folder: "source/_speakers" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    identifier_field: first_name
+    slug: "{{fields.first_name}}_{{fields.last_name}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Extends", name: "extends", widget: "hidden", default: "_layouts.speaker"}
+      - {label: "First name", name: "first_name", widget: "string"}
+      - {label: "Last name", name: "last_name", widget: "string"}
+      - {label: "Profession", name: "profession", widget: "string"}
+      - {label: "Website", name: "website", widget: "string"}
+      - {label: "Link da Palestra 1", name: "link_palestra1", widget: "string"}
+      - {label: "Texto para palestra 1", name: "nome_palestra1", widget: "string"}
+      - {label: "Link da Palestra 2", name: "link_palestra2", widget: "string"}
+      - {label: "Texto para palestra 2", name: "nome_palestra2", widget: "string"}
+      - {label: "Palestras", name: "link_palestras", widget: "string"}
+      - {label: "Texto para palestras", name: "nome_palestras", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Section", name: "section", widget: "hidden", default: "info"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "sponsors"
+    label: "Sponsors"
+    folder: "source/_sponsors"
+    create: true
+    identifier_field: name
+    slug: "{{fields.name}}"
+    fields:
+      - {label: "Extends", name: "extends", widget: "hidden", default: "_layouts.simple-page"}
+      - {label: "Website", name: "website", widget: "string"}
+      - {label: "Description", name: "name", widget: "string"}
+      - {label: "Type", name: "type", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+  - name: "pages" # Used in routes, e.g., /admin/collections/blog
+    label: "Page" # Used in the UI
+    folder: "source" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Extends", name: "extends", widget: "hidden", default: "_layouts.simple-page"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Section", name: "section", widget: "hidden", default: "pageContent"}
+      - {label: "Body", name: "body", widget: "markdown"}    
