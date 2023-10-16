@@ -1,0 +1,246 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+:root {
+  --common-size: calc(0.8vw + 1rem);
+}
+
+h1 {
+  font-size: clamp(36px, var(--common-size), 64px);
+}
+
+h2 {
+  font-size: clamp(24px, var(--common-size), 50px);
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: clamp(18px, var(--common-size), 36px);
+}
+
+/* Estilize as informações do palestrante */
+.speaker-info {
+  text-align: center;
+}
+
+.speaker-name {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #795548;
+  color: #FFF;
+  border-radius: 5px;
+  border: #795548 solid 5px;
+  margin-bottom: 5px; /* Adicione margem inferior para separar o nome da cidade */
+  line-height: 1.2; 
+}
+
+.speaker-location {
+  font-size: 14px;
+  margin-top: 0; /* Redefina a margem superior para remover qualquer espaço extra */
+  line-height: 1;
+}
+
+/* Adicione media queries conforme necessário para ajustar o layout em dispositivos menores */
+@media (max-width: 768px) {
+  .speaker-info {
+    text-align: left;
+  }
+
+  .speaker-name {
+    font-size: 16px;
+  }
+
+  .speaker-location {
+    font-size: 12px;
+  }
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #5B1E00;
+  z-index: 1000;
+  align-items: center;
+}
+
+p {
+  line-height: 3rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+  
+}
+
+.parallax-container {
+  min-height: 1024px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+    font-family: 'Lexend', sans-serif;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 100%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+  background-color: #5B1E00;
+}
+.text-brown{
+  color: #5B1E00 !important;
+}
+#loading {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: #f1f2f3;
+  background-image: url("../images/loader/loader-perainda-2.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#img-speakers {
+  border-radius: 150px;
+  border: #795548 solid 5px;
+}
+
+.span-speaker{
+  background-color: #ecc050;
+  color: #FFF;
+  border-radius: 5px;
+  border: #ecc050 solid 5px;
+}
+
+.span-speaker-default{
+  background-color: #795548;
+  color: #FFF;
+  border-radius: 5px;
+  border: #795548 solid 5px;
+}
+
+#card-speaker{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.collapsible li {
+  font-size: 20px; 
+}
+
+
+#day1, #day2, td{
+  font-size: 16px;
+}
+
+.thead tr, th{
+  font-weight: 400;
+  font-size: 18px;
+
+
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  color: #5B1E00;
+  background-color: #ffffff;
+}
+
+.tabs .tab a {
+ font-size: 20px;
+  color: #000000;
+}
+
+.tabs .indicator {
+  background-color: #5B1E00;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+     background-color: #ffffff;
+}
+
+
+.together {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.time {
+  font-size: 18px;
+}
+
+
+#card-sponsor{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.span-sponsor-silver{
+  background-color: #e0e0e0;
+  color: #333;
+  border-radius: 5px;
+  border: #e0e0e0 solid 5px;
+}
+
+
+
+#day1 p {
+  line-height: 1.5;
+}
+
+tfoot {
+  font-weight: bolder;
+}
+
+#result-balance {
+  width: fit-content;
+  background-color: rgba(66,66,66,1);
+  color: white;
+  padding: 1em;
+  border-radius: 1em;
+  letter-spacing: 4px;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+#result-balance:hover {
+  background-color: rgba(166,166,166,1);
+  border: 2px solid black;
+  color: black;
+}
+
+#result-balance > span {
+  font-weight: bold;
+  text-wrap: nowrap;
+}

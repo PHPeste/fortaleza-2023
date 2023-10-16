@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="google-site-verification"
+      content="goV8Sr0Oyft81BUbaI82a-QVJYOATmgNBmPMmLVPY_M"
+    />
+    <meta
+      name="description"
+      content="PHPeste é uma conferência de PHP organizada pelas comunidades “cabra da peste” do
+  nordeste brasileiro."
+    />
+    <meta
+      name="application-name"
+      content="PHPeste 2023 | Fortaleza - Ceará - Brasil."
+    />
+    <meta http-equiv="content-language" content="pt-br" />
+    <meta name="author" content="Comunidade PHP com Rapadura" />
+    <meta name="creator" content="Comunidade PHP com Rapadura" />
+
+    <meta property="og:site_name" content="PHPeste.org" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="PHPeste 2023 | Fortaleza - Ceará - Brasil."
+    />
+    <meta
+      property="og:description"
+      content="PHPeste é uma conferência de PHP organizada pelas comunidades “cabra da peste” do
+  nordeste brasileiro."
+    />
+    <meta property="og:url" content="https://phpeste.org" />
+    <meta
+      property="og:image"
+      content="https://phpeste.org/images/phpeste_marrom.webp"
+    />
+
+    <title>PHPeste | Maior conferência PHP do Nordeste</title>
+
+    <!-- CSS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link
+      href="css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+  </head>
+
+  <body>
+    <div id="loading"></div>
+    <div class="page">
+      <div class="navbar-fixed">
+        <nav
+          role="navigation"
+          class="nav-center"
+          style="
+            background-image: url('images/parallax-slider/background-menu-1.webp');
+            box-shadow: none;
+          "
+        >
+          <div class="nav-wrapper container" style="width: 85%">
+            <ul class="center hide-on-med-and-down">
+              <li>
+                <a class="scrollSuave" href="https://phpeste.org">Início</a>
+              </li>
+              <li><a class="scrollSuave" href="#about">Sobre</a></li>
+              <li><a class="scrollSuave" href="#finance">Prestação de Contas</a></li>
+              <li><a class="scrollSuave" href="#local">Local</a></li>
+              <li><a class="scrollSuave" href="#speakers">Palestrantes</a></li>
+              <li><a class="scrollSuave" href="#schedule">Programação</a></li>
+              <li><a class="scrollSuave" href="#tickets">Ingressos</a></li>
+              <li>
+                <a class="scrollSuave" href="#sponsors">Patrocinadores</a>
+              </li>
+              <li>
+                <a class="scrollSuave" href="#code-of-conduct"
+                  >Código de conduta</a
+                >
+              </li>
+              <li><a class="scrollSuave" href="#contact">Contato</a></li>
+            </ul>
+
+            <ul id="nav-mobile" class="sidenav">
+              <li>
+                <a class="scrollSuave" href="https://phpeste.org">Início</a>
+              </li>
+              <li><a class="scrollSuave" href="#about">Sobre</a></li>
+              <li><a class="scrollSuave" href="#finance">Prestação de Contas</a></li>
+              <li><a class="scrollSuave" href="#local">Local</a></li>
+              <li><a class="scrollSuave" href="#speakers">Palestrantes</a></li>
+              <li><a class="scrollSuave" href="#schedule">Programação</a></li>
+              <li><a class="scrollSuave" href="#tickets">Ingressos</a></li>
+              <li>
+                <a class="scrollSuave" href="#sponsors">Patrocinadores</a>
+              </li>
+              <li>
+                <a class="scrollSuave" href="#code-of-conduct"
+                  >Código de conduta</a
+                >
+              </li>
+              <li><a class="scrollSuave" href="#contact">Contato</a></li>
+            </ul>
+
+            <a
+              href="#"
+              data-target="nav-mobile"
+              class="sidenav-trigger"
+              title="Clique aqui para abri o menu"
+              ><i class="material-icons" style="color: #5b1e00">menu</i></a
+            >
+          </div>
+        </nav>
+      </div>
+
+      <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+          <div class="container">
+            <br /><br />
+            <h1 class="header center teal-text text-lighten-3">
+              <br /><br />
+              <img
+                class="responsive-img"
+                title="Logomarca marrom da conferência PHPeste"
+                alt="Logomarca marrom da conferência PHPeste"
+                src="images/phpeste_marrom.webp"
+              />
+            </h1>
+            <div class="row center text-brown">
+              <h3 class="header col s12 light">
+                A maior conferência de PHP do Nordeste!
+              </h3>
+              <h4 class="header col s12 light">6, 7 de outubro de 2023</h4>
+              <h5 class="header col s12 light">Fortaleza - Ceará</h5>
+              <br /><br />
+            </div>
+            <div class="row center">
+              <a
+                href="#about"
+                title="Clique aqui para deslizar o conteúdo para baixo"
+                class="btn-floating btn-large waves-effect waves-light brown darken-2 scrollSuave"
+                ><i class="material-icons">arrow_downward</i></a
+              >
+            </div>
+            <br /><br />
+          </div>
+        </div>
+        <div class="parallax">
+          <img
+            src="images/parallax-slider/background-slide1.webp"
+            title="Imagens de capa do evento de 2023 - Fortaleza - Ceará"
+            alt="Imagens de capa do evento de 2023 - Fortaleza - Ceará"
+          />
+        </div>
+      </div>
+
+    <div class="container">
+      <div class="section" id="about">
+
+        <!--   Icon Section   -->
+        <div class="row">
+          <div class="col s12 m12">
+            <div class="icon-block">
+              <br><br>
+              <h2 class="center brown-text">A CONFERÊNCIA</h2>
+              <h4 class="center">PHPeste é uma conferência de PHP organizada pelas comunidades “cabra da peste” do
+                nordeste brasileiro. </h4>
+              <p class="light flow-text" style="text-align: justify; font-size: 23px;">O evento já passou por João
+                Pessoa
+                (PB), Salvador (BA), Fortaleza(CE), São Luis(MA), Recife(PE), Natal(RN) e agora volta a Fortaleza(CE).
+                Serão 3 dias de muito aprendizado, muita mão na massa e, principalmente, de gente “arretada da peste”
+                que
+                irá ampliar ainda mais seu networking. O evento contará com a participação de palestrantes de altíssimo
+                nível e minicursos práticos.
+
+                A conferência é organizada pelas comunidades dos estados nordestinos: Alagoas, Bahia, Ceará, Maranhão,
+                Paraíba, Pernambuco, Piauí, Rio Grande do Norte e Sergipe. Dessa vez a Comunidade PHP com Rapadura está
+                a
+                frente da organização, e como a conferência é executada exclusivamente por membros voluntários das
+                comunidades os custos são minimizados para manter os preços dos ingressos o mais baixo possível. Dessa
+                forma, fazer um evento mais acessível.</p>
+            </div>
+          </div>
+        </div>
+
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <img
+                  class="responsive-img"
+                  title="Logomarca da comunidade PHP com Rapadura do Estado do Ceará"
+                  alt="Logomarca da comunidade PHP com Rapadura do Estado do Ceará"
+                  src="images/comunidades/php-com-rapadura.webp"
+                />
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <img
+                  class="responsive-img"
+                  title="Logomarca da comunidade Arretadas PHP com Rapadura do Estado do Ceará"
+                  alt="Logomarca da comunidade PHP com Rapadura do Estado do Ceará"
+                  src="images/comunidades/arretadas-php.webp"
+                />
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <img
+                  class="responsive-img"
+                  title="Logomarca da comunidade Rapadura Tech"
+                  alt="Logomarca da comunidade Rapadura Tech"
+                  src="images/comunidades/rapadura-tech.webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <img
+                  class="responsive-img"
+                  title="Logomarca da comunidade PHP PE do Estado do Pernanbuco"
+                  alt="Logomarca da comunidade PHP PE do Estado do Pernanbuco"
+                  src="images/comunidades/php-pe.webp"
+                />
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <img
+                  class="responsive-img"
+                  title="Logomarca da comunidade PHP MA do Estado do Maranhão"
+                  alt="Logomarca da comunidade PHP MA do Estado do Maranhão"
+                  src="images/comunidades/php-ma.webp"
+                />
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <img
+                  class="responsive-img"
+                  title="Logomarca da comunidade PHP BA do Estado da Bahia"
+                  alt="Logomarca da comunidade PHP BA do Estado da Bahia"
+                  src="images/comunidades/php-ba.webp"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <img
+                  class="responsive-img"
+                  title="Logomarca da comunidade PHP PB do Estado da Paraíba"
+                  alt="Logomarca da comunidade PHP PB do Estado da Paraíba"
+                  src="images/comunidades/php-pb.webp"
+                />
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <img
+                  class="responsive-img"
+                  title="Logomarca da comunidade PHP RN do Estado do Rio Grande do Norte"
+                  alt="Logomarca da comunidade PHP RN do Estado do Rio Grande do Norte"
+                  src="images/comunidades/php-rn.webp"
+                />
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <img
+                  class="responsive-img"
+                  title="Logomarca da comunidade PHP RS do Estado do Rio Grande do Sul"
+                  alt="Logomarca da comunidade PHP RS do Estado do Rio Grande do Sul"
+                  src="images/comunidades/php-rs.webp"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <img
+                  class="responsive-img"
+                  title="Logomarca da Comunidade PHP do Estado de Minas Gerais"
+                  alt="Logomarca da Comunidade PHP do Estado de Minas Gerais"
+                  src="images/comunidades/php-mg.webp"
+                />
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <img
+                  class="responsive-img"
+                  title="Logomarca da Comunidade PHP do Estado do Rio de Janeiro"
+                  alt="Logomarca da Comunidade PHP do Estado do Rio de Janeiro"
+                  src="images/comunidades/php-rio.webp"
+                />
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <img
+                  class="responsive-img"
+                  title="Logomarca da comunidade PHP SP do Estado de São Paulo"
+                  alt="Logomarca da comunidade PHP SP do Estado de São Paulo"
+                  src="images/comunidades/php-sp.webp"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <img
+                  class="responsive-img"
+                  src="images/comunidades/onde-codar.webp"
+                />
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <img
+                  class="responsive-img"
+                  title="Logomarca da Comunidade "
+                  alt="Logomarca da Comunidade "
+                  src="images/comunidades/php-women.webp"
+                />
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div class="icon-block">
+                <img
+                  class="responsive-img"
+                  title="Logomarca da Comunidade Vale Livre da região Vale do Jaguaribe"
+                  alt="Logomarca da Comunidade Vale Livre da região Vale do Jaguaribe"
+                  src="images/comunidades/vale-livre.webp"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <img
+                class="responsive-img"
+                title="Logomarca da comunidade Frontend Ceará"
+                alt="Logomarca da comunidade Frontend Ceará"
+                src="images/comunidades/front-ce.webp"
+              />
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <img
+                class="responsive-img"
+                title="Logomarca da Comunidade Poti Livre"
+                alt="Logomarca da Comunidade Poti Livre"
+                src="images/comunidades/poti-livre.webp"
+              />
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <img
+                class="responsive-img"
+                title="Logomarca da Comunidade Github Fortaleza"
+                alt="Logomarca da Comunidade Github Fortaleza"
+                src="images/comunidades/github-fortaleza.webp"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="icon-block">
+              <img
+                class="responsive-img"
+                title="Logomarca da Comunidade Github Fortaleza"
+                alt="Logomarca da Comunidade Github Fortaleza"
+                src="images/comunidades/react-ce.webp"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section" id="finance">
+        <div class="row">
+          <div class="col s12 m12 center">
+            <h2 class="center brown-text">Prestação de contas</h2>
+            <h3>Despesas</h3>
+            <table id="table-expenses" class="striped">
+              <thead>
+                <th>Detalhamento</th>
+                <th>Valor</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Material gráfico</td>
+                  <td>R$ 2.078,60</td>
+                </tr>
+                <tr>
+                  <td>4 coffee breaks (descartáveis, alimentação, rapaduras, frutas, etc)</td>
+                  <td>R$ 18.376,36</td>
+                </tr>
+                <tr>
+                  <td>Cordão dos crachás</td>
+                  <td>R$ 2.480,00</td>
+                </tr>
+                <tr>
+                  <td>Camisas</td>
+                  <td>R$ 10.660,00</td>
+                </tr>
+                <tr>
+                  <td>Sacolas personalizadas</td>
+                  <td>R$ 400,00</td>
+                </tr>
+                <tr>
+                  <td>Custos com palestrantes (casa, van, alimentação)</td>
+                  <td>R$ 8.692,00</td>
+                </tr>
+                <tr>
+                  <td>Banda de forró</td>
+                  <td>R$ 700,00</td>
+                </tr>
+                <tr>
+                  <td>Anuncios Instagram</td>
+                  <td>R$ 120,00</td>
+                </tr>
+                <tr>
+                  <td>Canecas dos palestrantes</td>
+                  <td>R$ 750,00</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Total</td>
+                  <td>R$ 44.256,96</td>
+                </tr>
+              </tfoot>
+            </table>
+            <h3>Receita</h3>
+            <table id="table-revenue" class="striped">
+              <thead>
+                <tr>
+                  <th>Detalhamento</th>
+                  <th>Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Patrocício Diamante (Accusense)</td>
+                  <td>R$ 12.000,00</td>
+                </tr>
+                <tr>
+                  <td>Patrocínio Bronze (Betho & ME2)</td>
+                  <td>R$ 6.000,00</td>
+                </tr>
+                <tr>
+                  <td>Financiamento Coletivo (pessoa física)</td>
+                  <td>R$ 3.259,35</td>
+                </tr>
+                <tr>
+                  <td>Venda de ingressos (Sympla)</td>
+                  <td>R$ 24.042,00</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Total</td>
+                  <td>R$ 45.301,35</td>
+                </tr>
+              </tfoot>
+            </table>
+            <div style="display: flex; justify-content: center;">
+              <p id="result-balance">SALDO: <span>R$ 1.044,39</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <div class="row center"></div>
+        </div>
+      </div>
+      <div class="parallax">
+        <img
+          src="images/parallax-slider/background-natal.webp"
+          title="Foto da edição de 2022 em Natal no Rio Grande do Norte"
+          alt="Foto da edição de 2022 em Natal no Rio Grande do Norte"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section" id="local">
+        <div class="row">
+          <div class="col s12 m12 center">
+            <br /><br />
+            <h2 class="center brown-text">LOCAL</h2>
+            <br /><br />
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.2105978354243!2d-38.489193725746894!3d-3.764292043354288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c748aa1e0708f5%3A0xcacc52aee90b0cc4!2sCentro%20Universit%C3%A1rio%20Est%C3%A1cio%20%7C%20Via%20Corpvs!5e0!3m2!1spt-BR!2sbr!4v1689697300032!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="450"
+              style="border: 0; border-radius: 5px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <br /><br />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m12 center">
+            <img
+              class="responsive-img"
+              style="width: 10rem"
+              title="Logomarca da Estacio Via Corpvs"
+              alt="Logomarca da Estacio Via Corpvs"
+              src="images/estacio.webp"
+            />
+            <h5 class="center">
+              ESTÁCIO VIA CORPVS | R. Eliseu Uchôa Beco, 600 Guararapes,
+              Fortaleza - CE
+            </h5>
+            <br />
+            <p
+              class="light flow-text"
+              style="text-align: center; font-size: 23px"
+            >
+              Informações sobre quais auditórios serão usados em breve!
+            </p>
+            <br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container"></div>
+      </div>
+      <div class="parallax">
+        <img
+          src="images/parallax-slider/background-recife.webp"
+          title="Foto da edição de 2019 em Recife no estado de Pernambuco"
+          alt="Foto da edição de 2019 em Recife no estado de Pernambuco"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section" id="speakers">
+        <div class="row">
+          <div class="col s12 m12 center">
+            <br /><br />
+            <h2 class="center brown-text">PALESTRANTES</h2>
+            <br />
+            <h4 class="center">
+              Conheça as autoridades que irão compartilhar conhecimento.
+            </h4>
+            <br /><br />
+            <div class="row">
+              <div
+                class="col s12 m12 center hoverable"
+                style="border-radius: 10px; padding: 10px"
+              >
+                <div class="col s12 m12 l6">
+                  <h2>Leticia Coelho</h2>
+                  <h6>Florianópolis - SC.</h6>
+                  <br />
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/engenheira.coelho.webp"
+                    title="Leticia Coelho"
+                    alt="Leticia Coelho"
+                    id="img-speakers"
+                  />
+                  <h5 class="span-speaker">Palestrante desinibida</h5>
+                </div>
+                <div class="col s12 m12 l6">
+                  <h6>
+                    Engenheira de Software, criadora de conteúdo, mentora,
+                    escritora, palestrante.
+                  </h6>
+                  <br />
+                  <p
+                    class="light flow-text"
+                    style="text-align: justify; font-size: 23px"
+                  >
+                    Engenheira de Software por atuação e Engenheira de
+                    telecomunicações por formação. Trabalho ativamente nas
+                    comunidades tech, divulgando e criando conteúdos
+                    simplificados para facilitar e incentivar a entrada de novos
+                    integrantes para a área como Engenheira Coelho. Palestrante,
+                    escritora, mentora, criadora de conteúdo, administradora de
+                    comunidades voltadas a inclusão de mulheres e pessoas com
+                    deficiência. Isso tudo, porque eu realmente acredito que um
+                    bom futuro depende de tecnologia e educação.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <br />
+
+            <!-- Palestrantes 1 -->
+
+            <div class="row">
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/DaianeAlves.webp"
+                    title="Foto da palestrante arretada Daiane Alves"
+                    alt="Foto da palestrante arretada Daiane Alves"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Daiane Alves</p>
+                    <p class="speaker-location">Rio de Janeiro - RJ</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/ViniciusCampitelli.webp"
+                    title="Foto do palestrante invocado Vinicius Campitelli"
+                    alt="Foto do palestrante invocado Vinicius Campitelli"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Vinicius Campitelli</p>
+                    <p class="speaker-location">São Paulo - SP</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/RosanaMarques.webp"
+                    title="Foto da palestrante roxeda Rosana Marques"
+                    alt="Foto da palestrante roxeda Rosana Marques"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Rosana Marques</p>
+                    <p class="speaker-location">Fortaleza - CE</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/EvaldoBarbosa.webp"
+                    title="Foto do palestrante desenrolado Evaldo Barbosa"
+                    alt="Foto do palestrante desenrolado Evaldo Barbosa"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Evaldo Barbosa</p>
+                    <p class="speaker-location">São Luíz - MA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- palestrantes 2 -->
+
+            <div class="row">
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/DanielLima.jpg"
+                    title="Foto do palestrante arretado Vicente Martins"
+                    alt="Foto do palestrante arretado Vicente Martins"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Daniel Lima</p>
+                    <p class="speaker-location">Russas - CE</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/MonicaCraveiro.webp"
+                    title="Foto da palestrante invocada Monica Craveiro"
+                    alt="Foto da palestrante invocada Monica Craveiro"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Monica Craveiro</p>
+                    <p class="speaker-location">São Paulo - SP</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/VitorMattos.webp"
+                    title="Foto do palestrante roxeda Vitor Mattos"
+                    alt="Foto do palestrante roxeda Vitor Mattos"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Vitor Mattos</p>
+                    <p class="speaker-location">Rio de Janeiro - RJ</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/SandraRayane.webp"
+                    title="Foto da palestrante desenrolada Sandra Rayane"
+                    alt="Foto da palestrante desenrolada Sandra Rayane"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Sandra Rayane</p>
+                    <p class="speaker-location">Fortaleza - CE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Palestrantes 3 -->
+
+            <div class="row">
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/IngriddosSantos.webp"
+                    title="Foto da palestrante arretada Ingrid Santos"
+                    alt="Foto da palestrante arretada Ingrid Santos"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Ingrid Santos</p>
+                    <p class="speaker-location">Fortaleza - CE</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/engenheira.coelho.webp"
+                    title="Foto do palestrante invocado Athos Ribeiro"
+                    alt="Foto do palestrante invocado Athos Ribeiro"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Leticia Coelho</p>
+                    <p class="speaker-location">Florianópolis - SC</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/LiviaCarolina.webp"
+                    title="Foto da palestrante roxeda Lívia Carolina"
+                    alt="Foto da palestrante roxeda Lívia Carolina"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Lívia Carolina</p>
+                    <p class="speaker-location">Rio de Janeiro - RJ</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/YanVancelis.webp"
+                    title="Foto do palestrante desenrolado Yan Vancelis"
+                    alt="Foto do palestrante desenrolado Yan Vancelis"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Yan Vancelis</p>
+                    <p class="speaker-location">Quixadá - CE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Palestrantes 4 -->
+
+            <div class="row">
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/BrunoLopes.webp"
+                    title="Foto do palestrante arretado Bruno Lopes"
+                    alt="Foto do palestrante arretado Bruno Lopes"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Bruno Lopes</p>
+                    <p class="speaker-location">Fortaleza - CE</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/HelenaSaminez.webp"
+                    title="Foto da palestrante invocada Helena Saminez"
+                    alt="Foto da palestrante invocada Helena Saminez"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Helena Saminez</p>
+                    <p class="speaker-location">São Luís - MA</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/AndersonAragao.webp"
+                    title="Foto do palestrante roxeda Anderson Aragão"
+                    alt="Foto do palestrante roxeda Anderson Aragão"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Anderson Aragão</p>
+                    <p class="speaker-location">João Pessoa - PB</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/HilderjaresMartins.webp"
+                    title="Foto do palestrante desenrolado Hilderjares Martins"
+                    alt="Foto do palestrante desenrolado Hilderjares Martins"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Hilderjares Martins</p>
+                    <p class="speaker-location">Iguatu - CE</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Palestrantes 5 -->
+
+            <div class="row">
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/JulianaMartins.webp"
+                    title="Foto da palestrante arretada Juliana Martins"
+                    alt="Foto da palestrante arretada Juliana Martins"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Juliana Martins</p>
+                    <p class="speaker-location">Fortaleza - CE</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/ViniciusDias.webp"
+                    title="Foto do palestrante invocado Vinicius Dias"
+                    alt="Foto do palestrante invocado Vinicius Dias"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Vinicius Dias</p>
+                    <p class="speaker-location">Petrópolis - RJ</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/ElenaGiuli.webp"
+                    title="Foto da palestrante desenrolada Elena Giuli"
+                    alt="Foto da palestrante desenrolada Elena Giuli"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Elena Giuli</p>
+                    <p class="speaker-location">São Paulo - SP</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/FernandoSantos.webp"
+                    title="Foto do palestrante desenrolado Fernando Pereira dos Santos (ferox)"
+                    alt="Foto do palestrante desenrolado Fernando Pereira dos Santos (ferox)"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Fernando Santos</p>
+                    <p class="speaker-location">João Pessoa - PB</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Palestrantes 6 -->
+
+            <div class="row">
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/RodrigoPokemaoBR.webp"
+                    title="Foto do palestrante arretado Rodrigo PokemaoBR"
+                    alt="Foto do palestrante arretado Rodrigo PokemaoBR"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Rodrigo PokemaoBR</p>
+                    <p class="speaker-location">Campinas - SP</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/LuizSiqueira.webp"
+                    title="Foto do palestrante invocado Luiz Siqueira"
+                    alt="Foto do palestrante invocado Luiz Siqueira"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Luiz Siqueira</p>
+                    <p class="speaker-location">Recife - PE</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/MarcelSantos.webp"
+                    title="Foto do palestrante desenrolado Marcel dos Santos"
+                    alt="Foto do palestrante desenrolado Marcel dos Santos"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Marcel dos Santos</p>
+                    <p class="speaker-location">São Paulo - SP</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/RafaelNeris.webp"
+                    title="Foto do palestrante roxeda Rafael Neris"
+                    alt="Foto do palestrante roxeda Rafael Neris"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Rafael Neris</p>
+                    <p class="speaker-location">Osasco - SP</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Palestrantes 7 -->
+
+            <div class="row">
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/LeoCarmo.webp"
+                    title="Foto do palestrante arretado Leo Carmo"
+                    alt="Foto do palestrante arretado Leo Carmo"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Leo Carmo</p>
+                    <p class="speaker-location">Ribeirão Preto - SP</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/LeoCavalcante.webp"
+                    title="Foto do palestrante invocado Leo Cavalcante"
+                    alt="Foto do palestrante invocado Leo Cavalcante"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Leo Cavalcante</p>
+                    <p class="speaker-location">São Paulo - SP</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/DouglasMedeiros.webp"
+                    title="Foto do palestrante desenrolado Douglas Medeiros"
+                    alt="Foto do palestrante desenrolado Douglas Medeiros"
+                    id="img-speakers"
+                  />
+                  <p class="speaker-name">Douglas Medeiros</p>
+                  <p class="speaker-location">Porto Alegre - RS</p>
+                </div>
+              </div>
+
+              <div class="col s12 m6 l3 center hoverable" id="card-speaker">
+                <div class="col s12 m12">
+                  <img
+                    class="responsive-img"
+                    src="images/speakers/DiegoBorges.webp"
+                    title="Foto do palestrante roxeda Diego Borges"
+                    alt="Foto do palestrante roxeda Diego Borges"
+                    id="img-speakers"
+                  />
+                  <div class="speaker-info">
+                    <p class="speaker-name">Diego Borges</p>
+                    <p class="speaker-location">Belo Horizonte - MG</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container"></div>
+      </div>
+      <div class="parallax">
+        <img
+          src="images/parallax-slider/background-saoluis.webp"
+          title="Foto da edição de 2018 em São Luís no estado do Maranhão"
+          alt="Foto da edição de 2018 em São Luís no estado do Maranhão"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section" id="schedule">
+        <div class="row">
+          <div class="col s12 m12 center">
+            <br /><br />
+            <h2 class="center brown-text">PROGRAMAÇÃO</h2>
+            <br /><br />
+
+            <h4 class="center">Veja a programação completa aqui</h4>
+
+            <br /><br />
+            <a
+              href="agenda.html"
+              target="_blank"
+              title="Clique aqui para acessar a programação"
+              class="btn-large waves-effect waves-light brown darken-2 scrollSuave"
+            >
+              acesse a programação</a
+            >
+            <br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container"></div>
+      </div>
+      <div class="parallax">
+        <img
+          src="images/parallax-slider/background-fortaleza2.webp"
+          title="Foto da edição de 2017 em Fortaleza no estado do Ceará auditório da Unifor, palestra de Rasmus Lerdorf"
+          alt="Foto da edição de 2017 em Fortaleza no estado do Ceará auditório da Unifor, palestra de Rasmus Lerdorf"
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section" id="tickets">
+        <div class="row">
+          <div class="col s12 m12 center">
+            <br /><br />
+            <h2 class="center brown-text">INGRESSOS</h2>
+            <br /><br />
+            <h4 class="center">
+              Falai jovi caso queira comprar teu ingresso e dos teus amigos é só
+              clicar no botão abaixo!
+            </h4>
+            <br />
+            <a
+              href="https://www.sympla.com.br/evento/phpeste-2023-fortaleza-ce/2055893"
+              target="_blank"
+              title="Clique aqui para comprar o seu ingresso"
+              class="btn-large waves-effect waves-light brown darken-2 scrollSuave"
+            >
+              Comprar ingresso!</a
+            >
+            <br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container"></div>
+      </div>
+      <div class="parallax">
+        <img
+          src="images/parallax-slider/background-fortaleza.webp"
+          title="Foto da edição de 2017 em Fortaleza no estado do Ceará auditório da Unifor, momento de discontração."
+          alt="Foto da edição de 2017 em Fortaleza no estado do Ceará auditório da Unifor, momento de discontração."
+        />
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section" id="sponsors">
+        <div class="row">
+          <div class="col s12 m12 center">
+            <br /><br />
+            <h2 class="center brown-text">PATROCINADORES</h2>
+            <br /><br />
+            <h4 class="center">
+              Conheça nossos parceiros, empresas que ajudam a PHPeste
+              acontececer.
+            </h4>
+            <br /><br />
+            <div class="row">
+              <div class="col s12 m12 center hoverable p-3" id="card-sponsor">
+                <h5><span class="span-speaker">Patrocinador Diamante</span></h5>
+                <br />
+                <img
+                  class="responsive-img"
+                  title="Logomarca da Accusense"
+                  alt="Logomarca da Accusense"
+                  src="images/sponsors/accusense.webp"
+                  width="80%"
+                />
+                <div
+                  class="col l12 s12 brown-text"
+                  style="margin-top: 30px; margin-bottom: 30px"
+                >
+                  <a
+                    target="_blank"
+                    style="margin-right: 50px"
+                    href="https://www.linkedin.com/company/accusense/"
+                    >LinkedIn</a
+                  >
+                  <a target="_blank" href="https://accusense.tech/"
+                    >Website</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!--Patrocinio bronze-->
+              <div class="col s12 m6 center hoverable p-3" id="card-sponsor">
+                <h6>
+                  <span class="span-speaker-default">Patrocinador Bronze</span>
+                </h6>
+                <br />
+                <img
+                  class="responsive-img"
+                  title="Logomarca da Me2 Softwares"
+                  alt="Logomarca da Me2 Softwares"
+                  src="images/sponsors/me2.webp"
+                  width="70%"
+                />
+                <div
+                  class="col l12 s12 brown-text"
+                  style="margin-top: 30px; margin-bottom: 30px"
+                >
+                  <a
+                    target="_blank"
+                    style="margin-right: 50px"
+                    href="https://instagram.com/me2softwares"
+                    >Instagram</a
+                  >
+                  <a target="_blank" href="https://me2.com.br">Website</a>
+                </div>
+              </div>
+
+              <div class="col s12 m6 center hoverable p-3" id="card-sponsor">
+                <h6>
+                  <span class="span-speaker-default">Patrocinador Bronze</span>
+                </h6>
+                <br />
+                <img
+                  class="responsive-img"
+                  title="Betho Costa"
+                  alt="Betho Costa"
+                  src="images/sponsors/BethoCosta.webp"
+                  width="35%"
+                  style="border-radius: 0.5rem"
+                  id="img-speakers"
+                />
+                <h5><span>Betho Costa</span></h5>
+                <div
+                  class="col l12 s12 brown-text"
+                  style="margin-top: 30px; margin-bottom: 30px"
+                >
+                  <a
+                    target="_blank"
+                    style="margin-right: 50px"
+                    href="https://www.instagram.com/heghbertho"
+                    >Instagram</a
+                  >
+                  <a target="_blank" href="">Website</a>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!--Patrocinio apoio institucional-->
+              <div
+                class="col s12 m6 offset-m3 center hoverable p-3"
+                id="card-sponsor"
+              >
+                <h6>
+                  <span class="span-speaker-default">Apoio Institucional</span>
+                </h6>
+                <br />
+                <img
+                  class="responsive-img"
+                  title="Logomarca da Centro Universitário Estácio | Via Corpvs"
+                  alt="Logomarca da Centro Universitário Estácio | Via Corpvs"
+                  src="images/estacio.webp"
+                  width="50%"
+                />
+                <div
+                  class="col l12 s12 brown-text"
+                  style="margin-top: 30px; margin-bottom: 30px"
+                >
+                  <a
+                    target="_blank"
+                    style="margin-right: 50px"
+                    href="https://instagram.com/tecnologiaviacorpvs?igshid=MzRlODBiNWFlZA=="
+                    >Instagram</a
+                  >
+                  <a target="_blank" href="https://estacio.br">Website</a>
+                </div>
+              </div>
+            </div>
+            <br /><br />
+            <h4 class="center">Por que apoiar a PHPeste?</h4>
+            <br /><br />
+            <p
+              class="light flow-text"
+              style="text-align: justify; font-size: 23px"
+            >
+              A conferência reúne um público diverso composto por pessoas
+              desenvolvedoras, arquitetas, engenheiras de software, gerentes de
+              TI, entusiastas e empresárias de todo o nordeste. Apoiar a PHPeste
+              é associar a sua marca a iniciativas colaborativas e um ambiente
+              de aprendizagem que estimula o desenvolvimento tecnológico do
+              país. Além da visibilidade, é uma ótima forma de capacitar sua
+              equipe, oferecer propostas, recrutar profissionais e criar
+              parcerias de negócio.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12 m12 center">
+            <br /><br />
+            <a
+              href="files/Midia_Kit_Completo_PT_BR.pdf"
+              target="_blank"
+              class="waves-effect waves-light btn-large brown darken-2"
+              ><i class="material-icons left">description</i>Saiba mais em nossa
+              apresentação</a
+            >
+            <br /><br />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper">
+      <div class="section no-pad-bot">
+        <div class="container"></div>
+      </div>
+      <div class="parallax">
+        <img
+          src="images/parallax-slider/background-salvador.webp"
+          title="Foto da edição de 2016 em Salvador no estado da Bahia."
+          alt="Foto da edição de 2016 em Salvador no estado da Bahia."
+        />
+      </div>
+    </div>
+
+    <br /><br />
+
+    <div class="container">
+      <div class="section" id="code-of-conduct">
+        <div class="row">
+          <div class="col s12 m12 center">
+            <br /><br />
+
+            <h2 class="center brown-text">CÓDIGO DE CONDUTA</h2>
+            <br />
+            <p
+              class="light flow-text"
+              style="text-align: justify; font-size: 20px"
+            >
+              A Conferência PHPeste está comprometida a ser livre de
+              discriminação para todos, independente de gênero, identidade e
+              expressão de gênero, orientação sexual, deficiência, aparência
+              física, raça, idade, origem ou religião. Não será tolerado, sob
+              nenhuma circunstância, o constrangimento de participantes em
+              eventos e canais organizados pela comunidade. Linguagem e/ou
+              exposição de imagens sexuais ou de cunho discriminatório não serão
+              apropriadas no âmbito de nossa comunidade - isto inclui os
+              eventos, as palestras, apresentações, exemplos e demonstrações,
+              site, e-mails, chat e quaisquer outro canal da comunidade. Os
+              participantes que violarem essas regras podem ser repreendidos ou
+              expulsos do canal e/ou evento sem direito a reembolso, a critério
+              da organização. Entendemos como assédio e constrangimento:
+              Comentários que reforçam estruturas sociais de dominação, sejam
+              relacionados a gênero, identidade e expressão de gênero,
+              orientação sexual, deficiência, aparência física, raça, idade,
+              origem ou religião;
+              <br />
+              - Imagens sexuais em espaços públicos; <br />
+              - Comentários de cunho sexual; <br />
+              - Intimidação intencional; <br />
+              - Perseguição; <br />
+              - Obtenção de som ou imagem constrangedores; <br />
+              - Interrupção continuada e intencional de palestras e/ou eventos
+              paralelos; <br />
+              - Contato físico inapropriado; atenção sexual não solicitada;<br /><br />
+              Se você estiver sendo assediado(a) ou se sentir constrangido(a),
+              ou perceber alguém nesta condição, ou se tiver qualquer
+              preocupação a respeito deste tema, não deixe de contatar um dos
+              evangelistas da comunidade imediatamente. As pessoas responsáveis
+              pela organização em eventos serão apresentadas ao início dos
+              eventos e podem ser facilmente identificadas por camisetas e/ou
+              crachás. Nos canais oficiais da comunidade procure um dos
+              evangelistas da comunidade. Embora o desejo seja de que isso não
+              venha a ser necessário, caso seja preciso a organização ajudará os
+              participantes no contato com a segurança do local ou com a polícia
+              ou mesmo providenciando escolta. Faremos o possível para que todos
+              sintam-se confortáveis e seguros.
+              <br />
+              Contamos com sua compreensão e participação.
+              <br />
+              <br />
+              - Contato: contato@phpeste.org <br />
+              - Polícia: 190 <br />
+              - Central de Atendimento à Mulher: 180 <br />
+              - SAMU: 192<br />
+              <br />
+
+              Créditos e fonte original: PHPSP
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="section" id="faq">
+        <div class="row">
+          <div class="col s12 m12">
+            <br /><br />
+            <h2 class="center brown-text">PERGUNTAS FREQUENTES (FAQ)</h2>
+            <br />
+            <ul class="collapsible" style="font-size: 23px">
+              <li>
+                <div class="collapsible-header">
+                  1 - Como faço para me inscrever no evento?
+                </div>
+                <div class="collapsible-body">
+                  <span>
+                    Basta clicar aqui ->
+                    <a
+                      href="https://www.sympla.com.br/evento/phpeste-2023-fortaleza-ce/2055893"
+                      target="_blank"
+                      title="Clique aqui para comprar o seu ingresso"
+                      class="btn-large waves-effect waves-light brown darken-2 scrollSuave"
+                    >
+                      Comprar ingresso!</a
+                    ></span
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">
+                  2 - Quem pode participar do evento?
+                </div>
+                <div class="collapsible-body">
+                  <span
+                    >PHPeste é uma conferência para quem deseja conhecer e
+                    aprofundar seus conhecimentos na linguagem de programação
+                    PHP. Não importa se você é iniciante ou sênior. Este evento
+                    é para você!</span
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">
+                  3 - Tenho direito a certificado?
+                </div>
+                <div class="collapsible-body">
+                  <span
+                    >Sim, desde que você tenha feito check-in. O certificado
+                    será encaminhado em até 48h após o encerramento do evento
+                    por e-mail.</span
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">
+                  4 - Terei direito a almoço no evento?
+                </div>
+                <div class="collapsible-body">
+                  <span
+                    >Não. O almoço será por conta de cada participante. Haverá
+                    um horário livre para o almoço.</span
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">
+                  5 - Haverá estacionamento no local?
+                </div>
+                <div class="collapsible-body">
+                  <span
+                    >Não, cada participante deverá se responsabilizar pela
+                    escolha de estacionamento na rua ou privado na redondezas do
+                    local do evento.</span
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">
+                  6 - Poderei fazer a inscrição no dia do evento direto no
+                  local?
+                </div>
+                <div class="collapsible-body">
+                  <span
+                    >A quantidade de lugares é limitada, por isso não garantimos
+                    a inscrição no dia do evento.</span
+                  >
+                </div>
+              </li>
+              <li>
+                <div class="collapsible-header">
+                  7 - Como entrar em contato com a organização?
+                </div>
+                <div class="collapsible-body">
+                  <span
+                    >Se você ou a sua empresa quer patrocinar a conferência, vem
+                    falar com a gente através do contato@phpeste.org</span
+                  >
+                </div>
+              </li>
+            </ul>
+            <br /><br /><br /><br />
+            <h2 class="center brown-text">
+              Aproveitem saudavelmente o evento!
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer brown darken-3" id="contact">
+      <div class="container">
+        <div class="row center">
+          <div class="col l12 s12">
+            <img
+              class="responsive-img"
+              title="Logomarca do evento PHPeste branca"
+              alt="Logomarca do evento PHPeste branca"
+              src="images/phpeste_claro.webp"
+            />
+          </div>
+          <div class="row center">
+            <div class="col l12 s12">
+              <a class="white-text flow-text" href="mailto:contato@phpeste.org"
+                >contato@phpeste.org</a
+              >
+            </div>
+          </div>
+          <div class="col l12 s12">
+            <h5 class="white-text" style="margin-bottom: 20px">
+              Redes Sociais
+            </h5>
+            <a
+              class="white-text"
+              target="_blank"
+              href="https://instagram.com/phpeste"
+              >Instagram</a
+            >
+            <a
+              style="margin: 30px"
+              class="white-text"
+              target="_blank"
+              href="https://twitter.com/phpestene"
+              >Twitter</a
+            >
+            <a class="white-text" target="_blank" href="https://t.me/phpeste"
+              >Telegram</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright brown darken-4">
+        <div class="container">
+          <div class="row center" style="margin-top: 15px">
+            <div class="col s12 m6">
+              Thanks to
+              <a
+                class="brown-text text-lighten-3"
+                target="_blank"
+                href="http://materializecss.com"
+                >Materialize</a
+              >
+            </div>
+            <div class="col s12 m6">
+              PHPeste 2023 | Fortaleza - Ceará - Brasil.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+  <script>
+    let $doc = $("html, body");
+    $(".scrollSuave").click(function () {
+      $doc.animate(
+        {
+          scrollTop: $($.attr(this, "href")).offset().top,
+        },
+        2000
+      );
+      return false;
+    });
+  </script>
+</html>
